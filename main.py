@@ -34,8 +34,8 @@ def classify_image(model, image_path):
     return predicted.item()
 
 if __name__ == "__main__":
-    model_path = "CNN_V1.pth" 
-    image_path = "showcase_images/ai_2.png"
+    model_path = "CNN_V2.pth" 
+    image_path = "showcase_images/ai_3.png"
     model = load_model(model_path)
 
     class_idx = classify_image(model, image_path)
